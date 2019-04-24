@@ -2,40 +2,89 @@
   "extends": "airbnb",
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 8,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true,
+          "legacyDecorators": true,
+          "experimentalObjectRestSpread": true,
+          "allowImportExportEverywhere": true
+      }
   },
-  "plugins": [
-    "react", 
-    "vue"
-  ],
   "env": {
-    "browser": true,
-    "node": true,
-    "jquery": true
+      "es6": true,
+      "commonjs": true,
+      "browser": true,
+      "node": true,
+      "jquery": true
   },
   "rules": {
-    "eqeqeq": 0,
-    "semi": [
-      2, "never"
-    ],
-    "import/first": 0,
-    "max-len": [
-      1, {
-        "code": 200
-      }
-    ],
-    "no-unused-vars": 1,
-    "global-require": 0,
-    "prefer-destructuring": 0,
-    "class-methods-use-this": 0,
-    "react/no-unused-state": 1,
-    "react/prop-types": 0,
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".js", ".jsx"]
-    }]
+      "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+      "indent": ["error", 4],
+      "semi": ["error", "always"],
+      "curly": ["error", "all"],
+      "no-param-reassign": ["error", { "props": false }],
+      "properties": "off",
+      "new-cap": "error",
+      "array-callback-return": "error",
+      "consistent-return": "error",
+      "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+      "no-mixed-operators": "error",
+      "no-nested-ternary": "off",
+      "no-prototype-builtins": "warn",
+      "no-plusplus": "off",
+      "no-sparse-arrays": "off",
+      "no-console": "off",
+      "no-tabs": "off",
+      "no-shadow": "error",
+      "no-underscore-dangle": "off",
+      "no-restricted-properties": "warn",
+      "max-len": "off",
+      "guard-for-in": "error",
+      "no-restricted-syntax": "off",
+      "comma-dangle": "off",
+      "camelcase": "off",
+      "experimentalDecorators": "off",
+      "no-debugger": "warn",
+      "no-return-assign": "off",
+      "global-require": "off",
+      "react/prefer-stateless-function": "off",
+      "react/no-did-mount-set-state": "off",
+      "react/no-unescaped-entities": "off",
+      "react/jsx-no-target-blank": "warn",
+      "react/jsx-indent": ["off", 4],
+      "react/jsx-indent-props": ["off", 4],
+      "react/prop-types": [
+          "warn",
+          {
+              "ignore": [
+                  "children",
+                  "location",
+                  "history",
+                  "form"
+              ]
+          }
+      ],
+      "react/require-default-props": "off",
+      "react/no-array-index-key": "off",
+      "react/forbid-prop-types": "off",
+      "react/jsx-no-bind": "off",
+      "react/sort-comp": "off",
+      "jsx-a11y/no-static-element-interactions": "off",
+      "import/no-extraneous-dependencies": "off",
+      "import/no-unresolved": "off",
+      "import/extensions": "off",
+      "import/no-dynamic-require": "off",
+      "eqeqeq": ["warn", "smart"],
+      "object-curly-newline": ["error", { "multiline": true }],
+      "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+      "prefer-destructuring": ["warn", {"object": true, "array": false}],
+      "react/destructuring-assignment": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/anchor-is-valid": ["warn"],
+      "react/no-access-state-in-setstate": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "no-restricted-globals": "off",
+      "prefer-promise-reject-errors": "off"
   }
 }
