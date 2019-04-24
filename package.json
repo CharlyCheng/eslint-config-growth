@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-growth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "本标准基于 [eslint-config-airbnb](https://github.com/airbnb/javascript)",
   "main": "index.js",
   "scripts": {
