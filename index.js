@@ -1,0 +1,1 @@
+modules.export = require('./.eslintrc.json')
